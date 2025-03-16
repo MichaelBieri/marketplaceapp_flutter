@@ -14,3 +14,10 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Code
+Start the APP: flutter run -d chrome
+
+## Video
+https://www.youtube.com/watch?v=YelMJOF3orE&t=1794s
+34:33
