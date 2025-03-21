@@ -14,25 +14,32 @@ class HomePage extends StatelessWidget {
         elevation: 0,
         leading: Icon(Icons.menu), // Falls klickbar: IconButton hinzufügen
         actions: [
-          IconButton(
-            icon: Icon(Icons.search),
-            onPressed: () {},
-          ), 
-          IconButton(
-            icon: Icon(Icons.notifications),
-            onPressed: () {},
-          ),
-          IconButton(
-            icon: Icon(Icons.shopping_cart),
-            onPressed: () {},
+            IconButton(
+              icon: Icon(Icons.search),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: Icon(Icons.notifications),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: Icon(Icons.shopping_cart),
+              onPressed: () {},
+            ),
+          ],
+        ),
+      body: Column(
+        children: [
+          Container(
+            height: 200,
+            width: double.infinity,
+            color: Colors.white,
+            child: Image.network(
+              'https://images.unsplash.com/photo-1612838320303-4b3b3b3b3b3b',
+              fit: BoxFit.cover,
+            ),
           ),
         ],
-      ),
-
-      body: const Center(
-        child: Text(
-          'Child: Willkommen auf der Webseite für den Handel mit Energiesparmassnahmen test',
-        ),
       ),
     );
   }
