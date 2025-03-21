@@ -6,8 +6,11 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.indigo,
       appBar: AppBar(
-        title: const Text('ENERRAS Ramazotti'), //rätromanisch mesiras energia
+        title: const Text('ENERRAS'), //rätromanisch mesiras energia
+        centerTitle: true,
+        backgroundColor:  Colors.indigo,
       ),
       body: const Center(
         child: Text(
