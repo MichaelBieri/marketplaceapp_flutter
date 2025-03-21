@@ -11,6 +11,14 @@ class HomePage extends StatelessWidget {
         title: const Text('ENERRAS'), //rätromanisch mesiras energia
         centerTitle: true,
         backgroundColor:  Colors.indigo,
+        elevation: 0,
+        leading: Icon(Icons.menu),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.search),
+            onPressed: () {},
+          ),
+        ],
       ),
       body: const Center(
         child: Text(

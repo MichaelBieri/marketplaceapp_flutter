@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'presentation/pages/home/home_page.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {
   runApp(const MyApp());
