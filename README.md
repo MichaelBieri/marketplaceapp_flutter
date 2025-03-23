@@ -20,4 +20,4 @@ Start the APP: flutter run -d chrome
 
 ## Video
 https://www.youtube.com/watch?v=YelMJOF3orE&t=1794s
-2.15h
+2.21h
