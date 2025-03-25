@@ -17,13 +17,17 @@ class _HomePageState extends State<HomePage> {
           _isDarkMode ? Colors.black : const Color.fromARGB(255, 133, 194, 142),
       appBar: AppBar(
         title: const Text('E N E R R A S'), // Rätoromanisch: Mesiras Energia
-        centerTitle: true,
+        centerTitle: false,
+        titleSpacing: 20.0,
         backgroundColor:
             _isDarkMode ? Colors.black : Color.fromARGB(255, 133, 194, 142),
         foregroundColor:
             _isDarkMode ? Colors.white : Color.fromARGB(255, 0, 0, 0),
-        elevation: 0,
-        leading: Icon(Icons.menu), // Falls klickbar: IconButton hinzufügen
+        elevation: 2.0,
+        leading: IconButton(
+          icon: Icon(Icons.menu),
+          onPressed: () => Scaffold.of(context).openDrawer(),
+        ),
         actions: [
           IconButton(
             icon: _isDarkMode ? Icon(Icons.light_mode) : Icon(Icons.dark_mode),
