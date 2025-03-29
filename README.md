@@ -1,6 +1,6 @@
 # marketplaceapp_flutter
 
-A new Flutter project.
+Architecture: Bloc order structure but Provider architecture.
 
 ## Getting Started
 
@@ -22,3 +22,4 @@ Start the APP: flutter run -d chrome
 https://www.youtube.com/watch?v=YelMJOF3orE&t=1794s
 3.07h
 
+https://www.youtube.com/watch?v=eT9wTf6HFS8&list=PLHRVPF7i77EUrMnigmGIcPBLaig_kLna7&index=14

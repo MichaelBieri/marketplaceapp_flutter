@@ -1,3 +1,5 @@
+// Hier kommt alles hinein.
+
 import 'package:flutter/material.dart';
 import 'src/features/cart/views/home_page.dart'; //
 

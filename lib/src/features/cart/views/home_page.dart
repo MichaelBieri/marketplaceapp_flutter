@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'NavigationDrawerWidget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -11,12 +12,12 @@ class _HomePageState extends State<HomePage> {
   bool _isDarkMode = false;
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       backgroundColor:
           _isDarkMode ? Colors.black : const Color.fromARGB(255, 133, 194, 142),
+      drawer: NavigationDrawerWidget(),
       appBar: AppBar(
-        title: const Text('E N E R R A S'), // Rätoromanisch: Mesiras Energia
+        title: const Text('E N E R R A S 5'), // Rätoromanisch: Mesiras Energia
         centerTitle: false,
         titleSpacing: 20.0,
         backgroundColor:
@@ -24,24 +25,20 @@ class _HomePageState extends State<HomePage> {
         foregroundColor:
             _isDarkMode ? Colors.white : Color.fromARGB(255, 0, 0, 0),
         elevation: 2.0,
-        leading: IconButton(
-          icon: Icon(Icons.menu),
-          onPressed: () => Scaffold.of(context).openDrawer(),
-        ),
         actions: [
           IconButton(
             icon: _isDarkMode ? Icon(Icons.light_mode) : Icon(Icons.dark_mode),
             onPressed: () {
               setState(() {
                 _isDarkMode = !_isDarkMode;
-              });
-            },
+              }); //setState  
+            }, //onPressed
           ),
           IconButton(icon: Icon(Icons.search), onPressed: () {}),
           IconButton(icon: Icon(Icons.notifications), onPressed: () {}),
           IconButton(icon: Icon(Icons.shopping_cart), onPressed: () {}),
           Padding(padding: const EdgeInsets.only(right: 15.0)),
-        ],
+        ], //actions
       ),
       body: Column(
         children: [
@@ -54,8 +51,7 @@ class _HomePageState extends State<HomePage> {
               fit: BoxFit.cover,
             ),
           ),
-        ],
+        ], //children
       ),
     );
-  }
 }
