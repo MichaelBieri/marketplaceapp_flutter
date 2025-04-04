@@ -19,7 +19,10 @@ samples, guidance on mobile development, and a full API reference.
 Start the APP: flutter run -d chrome
 
 ## Video
+# General Video
 https://www.youtube.com/watch?v=YelMJOF3orE&t=1794s
 3.07h
 
+# Side navigation video
 https://www.youtube.com/watch?v=eT9wTf6HFS8&list=PLHRVPF7i77EUrMnigmGIcPBLaig_kLna7&index=14
+14:20 min

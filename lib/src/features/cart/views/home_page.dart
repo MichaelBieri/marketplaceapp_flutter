@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'NavigationDrawerWidget.dart';
+import 'navigation_drawer_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -14,10 +14,10 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) => Scaffold(
       backgroundColor:
-          _isDarkMode ? Colors.black : const Color.fromARGB(255, 133, 194, 142),
+        _isDarkMode ? Colors.black : const Color.fromARGB(255, 133, 194, 142),
       drawer: NavigationDrawerWidget(),
       appBar: AppBar(
-        title: const Text('E N E R R A S 5'), // Rätoromanisch: Mesiras Energia
+        title: const Text('E N E R R A S 10'), // Rätoromanisch: Mesiras Energia
         centerTitle: false,
         titleSpacing: 20.0,
         backgroundColor:
