@@ -9,6 +9,7 @@ import 'settings_page.dart';
 import 'sell_page.dart';
 import 'profile_page.dart';
 import 'shopping_page.dart';
+import 'regulatory_page.dart';
 
 class NavigationDrawerWidget extends StatelessWidget {
   final padding = EdgeInsets.symmetric(horizontal: 20);
@@ -35,7 +36,7 @@ class NavigationDrawerWidget extends StatelessWidget {
             const SizedBox(height: 24),
             Divider(color: Colors.white70),
             const SizedBox(height: 24),
-            buildList(items: itemsSecond),
+            buildList(indexOffset: itemsFirst.length, items: itemsSecond),
             const Spacer(),
             const SizedBox(height: 12),
           ],
@@ -65,6 +66,7 @@ class NavigationDrawerWidget extends StatelessWidget {
 
   Widget buildList({
     required List<DrawerItem> items,
+    int indexOffset = 0, //Offset 0 für die ersten Elemente im side navigation
   }) =>
     ListView.separated(
       padding: padding, 
@@ -77,7 +79,7 @@ class NavigationDrawerWidget extends StatelessWidget {
         return buildMenuItem(
           text: item.title,
           icon: item.icon,
-          onClicked: () => selectItem(context, index),
+          onClicked: () => selectItem(context, indexOffset + index),
         );
       },
     );
@@ -87,7 +89,7 @@ class NavigationDrawerWidget extends StatelessWidget {
       MaterialPageRoute(builder: (context) => page),
     );
 
-    switch (index) {
+    switch (index) { //Case 6 logout missing
       case 0:
         navigateTo(HomePage());
         break;
@@ -106,6 +108,9 @@ class NavigationDrawerWidget extends StatelessWidget {
       case 5:
         navigateTo(SettingsPage());
         break;
+      case 7:
+        navigateTo(RegulatoryPage());
+        break;
     }
   }
 
@@ -113,6 +118,7 @@ class NavigationDrawerWidget extends StatelessWidget {
     required String text,
     required IconData icon,
     VoidCallback? onClicked,
+    int indexOffset = 0,
   }) {
     return Material(
       color: Colors.transparent,
