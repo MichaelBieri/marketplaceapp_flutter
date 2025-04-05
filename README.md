@@ -25,4 +25,5 @@ https://www.youtube.com/watch?v=YelMJOF3orE&t=1794s
 
 # Side navigation video
 https://www.youtube.com/watch?v=eT9wTf6HFS8&list=PLHRVPF7i77EUrMnigmGIcPBLaig_kLna7&index=14
-14:20 min
+Renderflex overflow
+collapsed doesn't work
